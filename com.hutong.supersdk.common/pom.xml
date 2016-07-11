@@ -13,33 +13,33 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-	
-	<repositories>
-		<repository>
-			<id>hutong</id>
-			<url>http://192.168.2.150:8081/nexus/content/groups/public/</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
-	
-	<!-- 
-	<repositories>
-		<repository>
-			<id>hutong</id>
-			<url>http://192.168.1.50:8081/nexus/content/groups/public/</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-	</repositories> -->
+	<!--
+<repositories>
+    <repository>
+        <id>hutong</id>
+        <url>http://192.168.2.150:8081/nexus/content/groups/public/</url>
+        <releases>
+            <enabled>true</enabled>
+        </releases>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+    </repository>
+</repositories>
+
+
+<repositories>
+    <repository>
+        <id>hutong</id>
+        <url>http://192.168.1.50:8081/nexus/content/groups/public/</url>
+        <releases>
+            <enabled>true</enabled>
+        </releases>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+    </repository>
+</repositories> -->
 
 	<dependencies>
 		<dependency>
@@ -53,33 +53,33 @@
 			<version>1.9.13</version>
 		</dependency>
 	</dependencies>
+	<!--
+        <distributionManagement>
+            <repository>
+                <id>nexus-releases</id>
+                <name>Nexus Releases Repository</name>
+                <url>http://192.168.2.150:8081/nexus/content/repositories/releases/</url>
+            </repository>
+            <snapshotRepository>
+                <id>nexus-snapshots</id>
+                <name>Nexus Snapshots Repository</name>
+                <url>http://192.168.2.150:8081/nexus/content/repositories/snapshots/</url>
+            </snapshotRepository>
+        </distributionManagement>
 
-	<distributionManagement>
-		<repository>
-			<id>nexus-releases</id>
-			<name>Nexus Releases Repository</name>
-			<url>http://192.168.2.150:8081/nexus/content/repositories/releases/</url>
-		</repository>
-		<snapshotRepository>
-			<id>nexus-snapshots</id>
-			<name>Nexus Snapshots Repository</name>
-			<url>http://192.168.2.150:8081/nexus/content/repositories/snapshots/</url>
-		</snapshotRepository>
-	</distributionManagement>
-	
-	<!-- 
-	<distributionManagement>
-		<repository>
-			<id>nexus-releases</id>
-			<name>Nexus Releases Repository</name>
-			<url>http://192.168.1.50:8081/nexus/content/repositories/releases/</url>
-		</repository>
-		<snapshotRepository>
-			<id>nexus-snapshots</id>
-			<name>Nexus Snapshots Repository</name>
-			<url>http://192.168.1.50:8081/nexus/content/repositories/snapshots/</url>
-		</snapshotRepository>
-	</distributionManagement> -->
+
+        <distributionManagement>
+            <repository>
+                <id>nexus-releases</id>
+                <name>Nexus Releases Repository</name>
+                <url>http://192.168.1.50:8081/nexus/content/repositories/releases/</url>
+            </repository>
+            <snapshotRepository>
+                <id>nexus-snapshots</id>
+                <name>Nexus Snapshots Repository</name>
+                <url>http://192.168.1.50:8081/nexus/content/repositories/snapshots/</url>
+            </snapshotRepository>
+        </distributionManagement> -->
 
 	<build>
 		<plugins>

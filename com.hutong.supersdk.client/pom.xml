@@ -14,6 +14,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
+	<!--
 	<repositories>
 		<repository>
 			<id>hutong</id>
@@ -26,8 +27,7 @@
 			</snapshots>
 		</repository>
 	</repositories>
-	
-	<!-- 
+
 	<repositories>
 		<repository>
 			<id>hutong</id>
@@ -53,7 +53,7 @@
 			<version>4.3.6</version>
 		</dependency>
 	</dependencies>
-
+<!--
 	<distributionManagement>
 		<repository>
 			<id>nexus-releases</id>
@@ -66,7 +66,7 @@
 			<url>http://192.168.2.150:8081/nexus/content/repositories/snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
-	
+	-->
 	<!-- 
 	<distributionManagement>
 		<repository>

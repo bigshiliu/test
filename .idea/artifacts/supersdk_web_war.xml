@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="supersdk-web:war">
+    <output-path>$PROJECT_DIR$/com.hutong.supersdk.web/target</output-path>
+    <root id="archive" name="supersdk-web.war">
+      <element id="artifact" artifact-name="supersdk-web:war exploded" />
+    </root>
+  </artifact>
+</component>
