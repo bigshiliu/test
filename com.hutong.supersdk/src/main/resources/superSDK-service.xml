@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+    <context:component-scan base-package="com.hutong.supersdk.service,
+								com.hutong.supersdk.sdk.handler,
+								com.hutong.supersdk.aop"/>
+
+    <aop:aspectj-autoproxy/>
+
+    <bean class="com.hutong.supersdk.aop.ServiceAspect"/>
+
+    <bean id="timerTask" class="org.springframework.scheduling.quartz.SchedulerFactoryBean"/>
+
+    <!-- Platform初始化参数 -->
+    <bean class="com.hutong.supersdk.service.modeltools.PlatformConfig">
+        <property name="platformUrl" value="${platform_url}"/>
+        <property name="platformAppId" value="${platform_appId}"/>
+        <property name="platformSecretKey" value="${platform_secretKey}"/>
+    </bean>
+
+
+</beans>
